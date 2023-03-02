@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  display: flex;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+.title {
+  position: absolute;
+  top: 10rem;
+  left: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  row-gap: var(16px);
+  color: #0cbb32;
+}
+
+.card {
+  position: absolute;
+  width: 900px;
+  height: 200px;
+  top: 18rem;
+  font-size: 20px;
+  row-gap: var(16px);
+  color: #bb210c;
+  padding: 30px 50px;
+  border: none;
+}
+
+.FortuneCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100rem;
+}
+
+.Buttons {
+  position: absolute;
+  top: 48rem;
+  left: 65rem;
+}
+
+button {
+  background-color: #1f0bd4; /* Green */
+  border: none;
+  color: rgb(244, 244, 247);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+
+
