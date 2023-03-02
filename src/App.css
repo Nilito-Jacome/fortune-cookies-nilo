@@ -41,7 +41,26 @@
   border: none;
 }
 
+.card2 {
+  position: absolute;
+  width: 900px;
+  height: 200px;
+  top: 30rem;
+  left: 50rem;
+  font-size: 20px;
+  row-gap: var(16px);
+  color: #15526e;
+  padding: 30px 50px;
+  border: none;
+}
+
 .FortuneCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100rem;
+}
+
+.FortuneCard2 {
   display: flex;
   flex-wrap: wrap;
   gap: 100rem;

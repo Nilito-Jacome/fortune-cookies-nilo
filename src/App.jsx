@@ -1,4 +1,5 @@
 import FortuneCard from "./components/FortuneCard";
+import FortuneCard2 from "./components/FortuneCard2";
 import phrases from "./assets/data/phrases.json";
 import "./App.css";
 import fondo1 from "./assets/img/fondo1.jpg";
@@ -9,10 +10,6 @@ import { useState } from "react";
 
 const Background = [fondo1, fondo2, fondo3, fondo4];
 
-/*
-  const names = ["Denis", "Vinicio", "Yenni", "Francisco"]
-  console.log( Math.floor(Math.random() * names.length))
-  */
 
 function App() {
   const numero = Math.floor(Math.random() * phrases.length);
@@ -40,6 +37,10 @@ function App() {
       
       <div className="card">
         <FortuneCard phraseData={phraseData} />
+      </div>
+
+      <div className="card2"> Author
+        <FortuneCard2 phraseData={phraseData} />
       </div>
         
       <div className="Buttons">
