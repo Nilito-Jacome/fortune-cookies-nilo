@@ -2,20 +2,19 @@ import FortuneCard from "./components/FortuneCard";
 import FortuneCard2 from "./components/FortuneCard2";
 import phrases from "./assets/data/phrases.json";
 import "./App.css";
-import fondo1 from "./assets/img/fondo1.jpg";
-import fondo2 from "./assets/img/fondo2.jpg";
-import fondo3 from "./assets/img/fondo3.jpg";
-import fondo4 from "./assets/img/fondo4.jpg";
+import fondo1 from "/fondo1.jpg";
+import fondo2 from "/fondo2.jpg";
+import fondo3 from "/fondo3.jpg";
+import fondo4 from "/fondo4.jpg";
 import { useState } from "react";
 import React from "react";
 
 const Background = [fondo1, fondo2, fondo3, fondo4];
 
 function App() {
+
   const numero = Math.floor(Math.random() * phrases.length);
-
   const [phraseData, setPhraseData] = useState(phrases[numero]);
-
   const [imgBack, setImgBack] = useState(Background[0]);
 
   const change = () => {
