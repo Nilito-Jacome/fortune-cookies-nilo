@@ -7,9 +7,9 @@ import fondo2 from "./assets/img/fondo2.jpg";
 import fondo3 from "./assets/img/fondo3.jpg";
 import fondo4 from "./assets/img/fondo4.jpg";
 import { useState } from "react";
+import React from "react";
 
 const Background = [fondo1, fondo2, fondo3, fondo4];
-
 
 function App() {
   const numero = Math.floor(Math.random() * phrases.length);
@@ -26,29 +26,37 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1 className="title">
-        CONOCE TU FORTUNA
-      </h1>
-            
-      <div className="image">
-        <img src={`${imgBack}`} />
-      </div>
-      
-      <div className="card">
-        <FortuneCard phraseData={phraseData} />
-      </div>
+    <div className="App" style={{ backgroundImage: `url(${imgBack})` }}>
+      <div className="title">CONOCE TU FORTUNA</div>
 
-      <div className="card2"> Author
+      <container className="contenedor">
+        <div className="card">
+          <FortuneCard phraseData={phraseData} />
+        </div>
+      </container>
+      <div className="card2">
+        Author
         <FortuneCard2 phraseData={phraseData} />
       </div>
-        
+
       <div className="Buttons">
-        <button onClick={change}>Presiona</button>
+        <button onClick={change}>!Dale! Presiona</button>
       </div>
-      
     </div>
   );
 }
 
 export default App;
+
+{
+  /*
+      <div>
+        <img src={`${imgBack}`} />
+      </div>
+
+style={{ backgroundImage: `url(${imgBack})`}}
+
+<img src="/fondo1.jpg" alt="" />
+
+*/
+}

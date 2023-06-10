@@ -1,4 +1,4 @@
-
+import React from "react";
 
 const FortuneCard2 = ({phraseData }) => {
 
